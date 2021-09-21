@@ -4,7 +4,7 @@
     "description": "MEAN Stack Online Shopping",
     "main": "index.js",
     "scripts": {
-      "start": "node app"
+      "start": "node index.js"
     },
     "dependencies": {
       "express": "*",
@@ -16,9 +16,12 @@
       "passport": "*",
       "passport-jwt": "*"
     },
+    "engines": {
+        "node": "14.15.2"
+    },
     "author": "SattwikRoy",
     "license": "",
     "devDependencies": {
-      "@angular/cli": "*"
+      "@angular/cli": "11.1.2"
     }
   }
