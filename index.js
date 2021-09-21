@@ -6,8 +6,8 @@ const cors = require('cors');
 const passport = require('passport');
 const mongoose = require('mongoose');
 const auth_router= require('./router/authRouter.js');
-const product_router= require('./router/ProductRouter.js');
-const order_router= require('./router/OrderRouter.js');
+const product_router= require('./router/productRouter.js');
+const order_router= require('./router/orderRouter.js');
 const config = require('./config/database');
 const port = process.env.PORT || 3000;
 
