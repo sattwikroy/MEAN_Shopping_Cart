@@ -9,7 +9,7 @@ const auth_router= require('./router/authRouter.js');
 const product_router= require('./router/ProductRouter.js');
 const order_router= require('./router/OrderRouter.js');
 const config = require('./config/database');
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 3000;
 
 mongoose.set('useNewUrlParser', true);
 mongoose.set('useFindAndModify', false);
@@ -47,7 +47,7 @@ app.use('/order',order_router);
 
 // Other Routes
 app.get("*", (req,res)=>{
-    res.sendFile(path.join(_dirname,'public/index.html'))
+    res.sendFile(path.join(__dirname,'public/index.html'))
 })
 
 //Passport Initialize
